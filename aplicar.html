@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplica ahora para trabajar con Raquel Connections. Formulario de aplicación rápido y sencillo.">
+    <meta name="keywords" content="aplicar, formulario, trabajar desde casa, aplicación">
+    <title>Aplica Ahora | Raquel Connections</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <i class="fas fa-microphone-alt"></i>
+                <span>Raquel</span> Connections
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="requisitos.html">Requisitos</a></li>
+                <li><a href="proceso.html">Proceso</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonials.html">Testimonios</a></li>
+                <li><a href="aplicar.html">Aplica Ahora</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 50vh; padding-top: 8rem;">
+        <div class="hero-content">
+            <h1>¡Aplica Ahora!</h1>
+            <p class="hero-subtitle">Toma el primer paso hacia tu independencia financiera</p>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section>
+        <div class="section-header">
+            <h2>Formulario de Aplicación</h2>
+            <p>Completa tus datos y te contactaremos en 24-48 horas</p>
+        </div>
+        
+        <div class="form-section">
+            <!-- IMPORTANT: Replace YOUR_FORM_ID with your actual Formspree form ID -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                
+                <!-- Personal Information -->
+                <h3 style="color: var(--primary-purple); margin-bottom: 1.5rem;">
+                    <i class="fas fa-user"></i> Información Personal
+                </h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Nombre *</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Apellido *</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Tu apellido">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Edad *</label>
+                        <input type="number" id="age" name="age" min="18" max="99" required placeholder="25">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Género *</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Selecciona...</option>
+                            <option value="female">Mujer</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <h3 style="color: var(--primary-purple); margin: 2rem 0 1.5rem;">
+                    <i class="fas fa-map-marker-alt"></i> Ubicación
+                </h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">Ciudad *</label>
+                        <input type="text" id="city" name="city" required placeholder="Miami">
+                    </div>
+                    <div class="form-group">
+                        <label for="state">Estado/Provincia *</label>
+                        <input type="text" id="state" name="state" required placeholder="Florida">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">País *</label>
+                    <select id="country" name="country" required>
+                        <option value="">Selecciona tu país...</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="CA">Canadá</option>
+                        <option value="MX">México</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="ES">España</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+
+                <!-- Languages -->
+                <h3 style="color: var(--primary-purple); margin: 2rem 0 1.5rem;">
+                    <i class="fas fa-language"></i> Idiomas
+                </h3>
+                
+                <div class="form-group">
+                    <label>Idiomas que hablas fluidamente *</label>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 0.5rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="languages" value="english"> Inglés
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="languages" value="spanish"> Español
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="languages" value="french"> Francés
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="languages" value="portuguese"> Portugués
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="languages" value="other"> Otro
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <h3 style="color: var(--primary-purple); margin: 2rem 0 1.5rem;">
+                    <i class="fas fa-briefcase"></i> Experiencia
+                </h3>
+                
+                <div class="form-group">
+                    <label>¿Tienes experiencia previa en trabajo por voz? *</label>
+                    <div style="display: flex; gap: 2rem; margin-top: 0.5rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="radio" name="experience" value="yes" required> Sí
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="radio" name="experience" value="no" required> No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="experienceDetails">Si tienes experiencia, cuéntanos brevemente:</label>
+                    <textarea id="experienceDetails" name="experienceDetails" placeholder="Tipo de trabajo, duración, etc. (opcional)"></textarea>
+                </div>
+
+                <!-- Availability -->
+                <h3 style="color: var(--primary-purple); margin: 2rem 0 1.5rem;">
+                    <i class="fas fa-clock"></i> Disponibilidad
+                </h3>
+                
+                <div class="form-group">
+                    <label for="availability">¿Cuántas horas semanales puedes dedicar? *</label>
+                    <select id="availability" name="availability" required>
+                        <option value="">Selecciona...</option>
+                        <option value="10-15">10-15 horas</option>
+                        <option value="15-25">15-25 horas</option>
+                        <option value="25-35">25-35 horas</option>
+                        <option value="35+">35+ horas (tiempo completo)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué días prefieres trabajar? *</label>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-top: 0.5rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="days" value="monday"> Lunes
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="days" value="tuesday"> Martes
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="days" value="wednesday"> Miércoles
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="days" value="thursday"> Jueves
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="days" value="friday"> Viernes
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="days" value="saturday"> Sábado
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="days" value="sunday"> Domingo
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué turnos prefieres? *</label>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 0.5rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="shifts" value="morning"> Mañana (6am-12pm)
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="shifts" value="afternoon"> Tarde (12pm-6pm)
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="shifts" value="evening"> Noche (6pm-12am)
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="shifts" value="night"> Madrugada (12am-6am)
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Why Us -->
+                <h3 style="color: var(--primary-purple); margin: 2rem 0 1.5rem;">
+                    <i class="fas fa-heart"></i> Sobre Ti
+                </h3>
+                
+                <div class="form-group">
+                    <label for="whyUs">¿Por qué quieres trabajar con nosotros? *</label>
+                    <textarea id="whyUs" name="whyUs" required placeholder="Cuéntanos tus motivaciones, metas, y por qué crees que serías una buena operadora..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="howHeard">¿Cómo te enteraste de nosotros?</label>
+                    <select id="howHeard" name="howHeard">
+                        <option value="">Selecciona...</option>
+                        <option value="google">Google/Búsqueda</option>
+                        <option value="social">Redes Sociales</option>
+                        <option value="friend">Amiga/Conocida</option>
+                        <option value="ad">Publicidad</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+
+                <!-- Consent -->
+                <h3 style="color: var(--primary-purple); margin: 2rem 0 1.5rem;">
+                    <i class="fas fa-shield-alt"></i> Confirmación
+                </h3>
+                
+                <div class="form-group">
+                    <label style="display: flex; align-items: flex-start; gap: 1rem; font-weight: normal;">
+                        <input type="checkbox" name="ageConfirm" required style="margin-top: 0.3rem;">
+                        <span>Confirmo que soy mayor de 18 años y toda la información proporcionada es verdadera. *</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label style="display: flex; align-items: flex-start; gap: 1rem; font-weight: normal;">
+                        <input type="checkbox" name="terms" required style="margin-top: 0.3rem;">
+                        <span>Acepto los términos de servicio y política de privacidad. Entiendo que mi información será tratada confidencialmente. *</span>
+                    </label>
+                </div>
+
+                <!-- Hidden fields for Formspree -->
+                <input type="hidden" name="_subject" value="Nueva Aplicación - Raquel Connections">
+                <input type="hidden" name="_next" value="https://raquelconnections.com/gracias.html">
+
+                <!-- Submit -->
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 4rem;">
+                        <i class="fas fa-paper-plane"></i> Enviar Aplicación
+                    </button>
+                    <p style="margin-top: 1rem; color: var(--gray); font-size: 0.9rem;">
+                        Te contactaremos en 24-48 horas hábiles
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="light-section">
+        <div class="section-header">
+            <h2>¿Problemas con el formulario?</h2>
+        </div>
+        <div class="text-center">
+            <p style="color: var(--gray); margin-bottom: 1rem;">
+                Si tienes dificultades para completar la aplicación, contáctanos directamente:
+            </p>
+            <p>
+                <i class="fas fa-envelope" style="color: var(--primary-purple);"></i> 
+                <strong>talent@raquelconnections.com</strong><br>
+                <i class="fas fa-phone" style="color: var(--primary-purple);"></i> 
+                <strong>+1 (555) 123-4567</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Raquel Connections</h3>
+                <p>Oportunidades legítimas desde 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <p>
+                    <a href="index.html">Inicio</a><br>
+                    <a href="beneficios.html">Beneficios</a><br>
+                    <a href="faq.html">FAQ</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>talent@raquelconnections.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Raquel Connections. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
